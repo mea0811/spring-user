@@ -11,7 +11,7 @@ public class UserService {
     @Autowired
     private UserDao userDao;
 
-    public User registUser(User user) {
-        return userDao.insertUser(user);
+    public void registUser(User user) {
+        userDao.insertUser(user);
     }
 }
