@@ -5,6 +5,7 @@
 <mapper namespace="kr.re.kitri.hello.dao.UserDao">
     <insert id="insertUser"
             parameterType="kr.re.kitri.hello.model.User">
-
+        INSERT INTO user (user_id, NAME, age)
+        VALUES (#{userId}, #{name}, #{age})
     </insert>
 </mapper>
