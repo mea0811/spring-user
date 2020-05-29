@@ -18,6 +18,9 @@ public class UserService {
     }
 
     public List<User> getAllUsers() {
+//        double a = 3 / 0;
+//        int[] a = {1,2,3};
+//        int b = a[4];
         return userDao.selectAllUsers();
     }
 
